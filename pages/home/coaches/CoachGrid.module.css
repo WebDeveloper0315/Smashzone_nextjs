@@ -1,0 +1,46 @@
+.card {
+    transition:
+      transform 150ms ease,
+      box-shadow 150ms ease;
+  
+    &:hover {
+      transform: scale(1.01);
+      box-shadow: var(--mantine-shadow-md);
+    }
+  }
+  
+  .title {
+    font-family: Garet, 'Greycliff CF', var(--mantine-font-family);
+    font-weight: bold;
+  }
+
+  /* second new section */
+  .bgblack{background-color: #000;
+    padding: 70px 0px;
+  }
+  .mainbx{
+    background-color: #8e8e8e;
+    padding: 10px;
+    width: 100%;
+    margin: 0 15px
+  }
+  .toptext{
+    text-align: center;
+    background-color: #ececec;
+   
+}
+.bottext{
+    text-align: center;
+    padding: 20px;
+    background-color: #ececec;
+    margin-top: 10px;
+    height: auto;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+    &:hover {
+      background-color: #ecececcc;
+    }
+}
+

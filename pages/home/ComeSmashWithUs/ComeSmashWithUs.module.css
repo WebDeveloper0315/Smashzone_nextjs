@@ -1,0 +1,110 @@
+.card {
+  transition: transform 150ms ease, box-shadow 150ms ease;
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: var(--mantine-shadow-md);
+  }
+}
+
+.title {
+  font-family: Garet, "Greycliff CF", var(--mantine-font-family);
+  font-weight: bold;
+}
+
+/* second new section */
+.bgblack {
+  background-color: #000;
+  padding: 70px 0px;
+}
+.mainbx {
+  background-color: #8e8e8e;
+  padding: 30px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  height: 100%;
+}
+.toptext {
+  text-align: center;
+  background-color: #ececec;
+  padding: 45px 0px;
+  flex: 1 1 auto;
+}
+.bottext {
+  text-align: center;
+  padding: 20px;
+  background-color: #ececec;
+  margin-top: 20px;
+  height: auto;
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  width: 100%;
+  &:hover {
+    background-color: rgba(237, 237, 237, 0.8);
+  }
+}
+.mainbx2 {
+  text-align: center;
+  background-color: #898b00;
+  padding: 30px;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.toptext2 {
+  text-align: center;
+  background-color: #e4e800;
+  padding: 45px 16px;
+  flex: 1 1 auto;
+}
+.bottext2 {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(228, 232, 0);
+  margin-top: 20px;
+  height: auto;
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  width: 100%;
+  &:hover {
+    background-color: rgb(228, 232, 0, 0.8);
+  }
+}
+.mainbx3 {
+  background-color: #7d2c00;
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 100%;
+  max-width: 600px;
+}
+.toptext3 {
+  text-align: center;
+  background-color: #d04900;
+  padding: 45px 0px;
+  flex: 1 1 auto;
+}
+.bottext3 {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(208, 73, 0);
+  margin-top: 20px;
+  height: auto;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  width: 100%;
+  &:hover {
+    background-color: rgba(208, 73, 0, 0.8);
+  }
+}

@@ -1,0 +1,17 @@
+.startFreeBtn {
+  cursor: pointer;
+  user-select: none;
+
+  @media (min-width: $mantine-breakpoint-md) {
+    & div svg {
+      transform: translateX(0);
+      transition: translate 1s ease-in-out;
+    }
+
+    &:hover {
+      div svg {
+        animation: l2r 1s infinite;
+      }
+    }
+  }
+}

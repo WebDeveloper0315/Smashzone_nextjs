@@ -1,0 +1,153 @@
+.backgroundContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right -300px;
+
+  @media (min-width: $mantine-breakpoint-sm) {
+    background-image: url("/img/home-yellow.png");
+    background-position: top right -200px;
+  }
+  @media (min-width: $mantine-breakpoint-md) {
+    background-position: top right -200px;
+  }
+  @media (min-width: $mantine-breakpoint-lg) {
+    background-position: top right -100px;
+  }
+}
+
+.logoImage {
+  width: 50%;
+  height: auto;
+}
+
+.shuttleCockLogo {
+  position: absolute;
+  width: 500px;
+  height: auto;
+  z-index: 0;
+  top: 50%;
+  display: none;
+  @media (min-width: $mantine-breakpoint-md) {
+    display: block;
+    right: 5px;
+  }
+  @media (min-width: $mantine-breakpoint-lg) {
+    left: 50%;
+  }
+}
+
+.backgroundImage2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  display: none;
+  @media (min-width: $mantine-breakpoint-md) {
+    display: block;
+    width: calc(100vw / 2.8);
+  }
+}
+.backgroundImage3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  object-fit: cover;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  display: none;
+  @media (min-width: $mantine-breakpoint-md) {
+    display: block;
+    width: calc(100vw / 4.2);
+    height: auto;
+  }
+}
+
+.textOverlay {
+  font-family: Garet, sans-serif, "Greycliff CF", var(--mantine-font-family);
+  font-weight: normal;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  text-align: left;
+  z-index: 1;
+}
+.textOverlay h1 {
+  font-size: 40px;
+}
+
+.textOverlay p {
+  user-select: none;
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  @media (min-width: $mantine-breakpoint-md) {
+    font-size: 40px;
+  }
+}
+
+.socialLink {
+  @media (min-width: $mantine-breakpoint-md) {
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      animation: pulse 1s infinite;
+    }
+  }
+}
+
+.startFreeBtn {
+  cursor: pointer;
+  user-select: none;
+
+  @media (min-width: $mantine-breakpoint-md) {
+    & div svg {
+      transform: translateX(0);
+      transition: translate 1s ease-in-out;
+    }
+
+    &:hover {
+      div svg {
+        animation: l2r 1s infinite;
+      }
+    }
+  }
+}
+
+@keyframes l2r {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-1.5px);
+  }
+
+  100% {
+    transform: translateX(1.5px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

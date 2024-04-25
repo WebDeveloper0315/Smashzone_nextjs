@@ -1,0 +1,35 @@
+.list {
+  padding: rem(0px);
+  list-style: none;
+  line-height: rem(40px);
+  margin-top: rem(20px);
+}
+.inlinetext {
+  display: flex;
+  justify-content: space-between;
+}
+.borderbox {
+  border: 1px solid#ccc;
+  padding: 10px 4px;
+}
+.grid {
+  padding: 1px;
+}
+.manualBookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.timeRange {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.duration {
+  width: 100%;
+  flex: 1 1 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

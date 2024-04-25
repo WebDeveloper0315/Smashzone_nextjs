@@ -1,0 +1,33 @@
+.topheader {
+    background-color: #080b18;
+    padding: 10px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .leftSide {
+    display: flex;
+    /* flex-direction: column; */
+  }
+  
+  .contactInfo {
+    margin-bottom: 5px;
+    color: #fff;
+    margin-left: rem(10px);
+    font-size: 14px;
+    /* display: inline-block; */
+  }
+  
+  .rightSide {
+    display: flex;
+    color: #fff;
+  }
+  
+  .socialIcon {
+    margin-right: 10px;
+  }
+  
+  
